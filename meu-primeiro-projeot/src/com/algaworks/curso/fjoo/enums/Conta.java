@@ -1,10 +1,13 @@
 package com.algaworks.curso.fjoo.enums;
 
-public class Conta {
+public abstract class Conta {
 	protected SituacaoConta situacaoConta;
 	protected String descricao;
 	protected Double valor;
 	protected String dataVencimento;
+	
+	
+	public abstract void exibirDetalhes();
 	
 	public Conta() {
 		situacaoConta = SituacaoConta.PENDENTE;

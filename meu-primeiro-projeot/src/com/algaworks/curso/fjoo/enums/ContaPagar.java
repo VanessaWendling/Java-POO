@@ -31,4 +31,10 @@ public class ContaPagar extends Conta{
 			this.setSituacaoConta(SituacaoConta.PAGA);
 		}
 	}
+
+	@Override
+	public void exibirDetalhes() {
+		System.out.println("Descricao da Conta: " + super.descricao + ".\nVencimento: " + super.getDataVencimento() + ".\nFornecedor: " + this.getFornecedor().getNome() );
+		
+	}
 }
